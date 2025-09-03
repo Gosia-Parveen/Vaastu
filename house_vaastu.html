@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaastu Consultant</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgba(65, 184, 184, 0.679);
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: teal;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: fixed;      
+      top: 0;               
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-align: center;
+      padding: 12px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Flex container */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 250px; /* space below navbar */
+      padding: 20px;
+      gap: 30px;
+      flex-wrap: wrap; /* allow wrap on smaller screens */
+    }
+
+    .image-box {
+      flex: 1 1 300px;
+      max-width: 450px;
+      height: 450px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background-image: url("photo/house.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .content-text {
+      flex: 1 1 300px;
+      max-width: 600px;
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+      color: white;
+      text-align: justify;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .content-text h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .image-box {
+        width: 100%;
+        max-width: 320px;
+        height: 250px;
+        margin: 0 auto;
+      }
+      .content-text {
+        font-size: 16px;
+        padding: 15px;
+      }
+      .content-text h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="guru.html">EXPERTS</a>
+    <a href="zodiac.html">What's VASSTU</a>
+    <a href="house_vaastu.html">HOUSE VAASTU</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+
+  <div class="container">
+    <div class="image-box"></div>
+    <div class="content-text">
+      <h2><i>HOUSE VAASTU</i></h2>
+      <p>
+        House Vaastu plays a vital role in shaping the energy and
+        well-being of a home. Rooted in ancient Indian traditions, Vaastu Shastra emphasizes
+        the balance between the five elements—earth, water, fire, air, and space—and their
+        influence on human life. In a Vaastu-compliant house, the entrance is placed in the 
+        most auspicious direction, usually east or north, to welcome prosperity and positive 
+        energy. Rooms are arranged thoughtfully: the kitchen in the southeast (fire element), 
+        the master bedroom in the southwest (stability), and the prayer or meditation room in 
+        the northeast (spiritual growth). Even the positioning of furniture, water sources, 
+        and windows is considered to ensure harmony and health. By following these principles, 
+        House Vaastu not only enhances peace, relationships, and financial stability but also 
+        connects modern homes with timeless cosmic energy, making the living space a true sanctuary.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+

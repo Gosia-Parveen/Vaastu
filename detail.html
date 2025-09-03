@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guru Details</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("photo/wall3.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      flex: 1 1 280px; /* Flexible width */
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h5 {
+      margin: 10px 0;
+      font-size: 18px;
+      color: #f9d342; /* golden highlight */
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 6px 0;
+    }
+
+    .button-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .button-container a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: teal;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .button-container a:hover {
+      background: #f9d342;
+      color: black;
+    }
+
+    /* ✅ RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .card-container {
+        gap: 15px;
+      }
+      .card {
+        flex: 1 1 100%; /* 1 card per row */
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      .card {
+        padding: 15px;
+        font-size: 14px;
+      }
+      .card h5 {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <h5>Dr. Priya Kulkarni</h5>
+      <p>A modern Vaastu consultant from Pune with a PhD in Environmental Science. Expert in eco-friendly architecture aligned with Vaastu principles.</p>
+      <p><b>Email:</b> priya.kulkarni@vaastuguru.com</p>
+      <p><b>Phone:</b> +91 93456 78901</p>
+      <p><b>Visiting Hours:</b> 12:00 PM – 7:00 PM (Mon–Sat)</p>
+    </div>
+
+    <div class="card">
+      <h5>Swami Kartikeya Anand</h5>
+      <p>Based in Rishikesh, guiding seekers for over 20 years. Specializes in spiritual Vaastu and meditation spaces.</p>
+      <p><b>Email:</b> kartikeya.anand@vaastuguru.com</p>
+      <p><b>Phone:</b> +91 97654 32109</p>
+      <p><b>Visiting Hours:</b> 7:00 AM – 1:00 PM (Daily)</p>
+    </div>
+
+    <div class="card">
+      <h5>Pandit Arvind Joshi</h5>
+      <p>Originating from Jaipur with 30 years of consulting, highly regarded for corporate and commercial Vaastu planning.</p>
+      <p><b>Email:</b> arvind.joshi@vaastuguru.com</p>
+      <p><b>Phone:</b> +91 91234 56789</p>
+      <p><b>Visiting Hours:</b> 9:00 AM – 4:00 PM (Mon–Fri)</p>
+    </div>
+
+    <div class="card">
+      <h5>Guru Meenakshi Devi</h5>
+      <p>Respected consultant from Chennai with 18 years of practice, focusing on Vaastu for health and well-being.</p>
+      <p><b>Email:</b> meenakshi.devi@vaastuguru.com</p>
+      <p><b>Phone:</b> +91 99876 54321</p>
+      <p><b>Visiting Hours:</b> 11:00 AM – 6:00 PM (Tue–Sun)</p>
+    </div>
+
+    <div class="card">
+      <h5>Acharya Raghunath Sharma</h5>
+      <p>With 25+ years of expertise from Varanasi, specializes in residential and temple Vaastu, blending traditional knowledge with modern living.</p>
+      <p><b>Email:</b> raghunath.sharma@vaastuguru.com</p>
+      <p><b>Phone:</b> +91 98765 43210</p>
+      <p><b>Visiting Hours:</b> 10:00 AM – 5:00 PM (Mon–Sat)</p>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
+</body>
+</html>
