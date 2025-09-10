@@ -5,32 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vaastu Consultant</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-image: url("photo/wall2.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    /* Push content below navbar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("photo/wall2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    /* Navbar */
-    .navbar {
-      background-color: teal;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 10px 0;
-      z-index: 1000;
-    }
+  padding-top: 70px;  /* ✅ leaves space for navbar */
+}
+
+/* Navbar */
+.navbar {
+  background-color: teal;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
 
     .navbar a {
       color: white;
@@ -117,14 +120,15 @@
     }
 
     /*CARDS*/
-    .card-container {
-      width: 100%;
-      margin: 120px auto 20px auto;  /* navbar ke neeche sahi gap */
-      display: flex;
-      justify-content: center;  /* center align */
-      flex-wrap: wrap;
-      padding: 0 20px;
-    }
+   .card-container {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
 
     .card {
       background-color: white;
@@ -262,5 +266,6 @@
 
 </body>
 </html>
+
 
 
